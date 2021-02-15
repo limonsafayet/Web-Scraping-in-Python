@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Web-Scraping-in-Python.iml" filepath="$PROJECT_DIR$/.idea/Web-Scraping-in-Python.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Web-Scraping.iml" filepath="$PROJECT_DIR$/.idea/Web-Scraping.iml" />
     </modules>
   </component>
 </project>
