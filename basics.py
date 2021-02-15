@@ -116,6 +116,18 @@ table = pd.DataFrame({'Product Name':product_name_list, 'Description':descriptio
 
 # print(table)
 
+# extracted data from nested HTML tags
+boxes = soup.find_all('div', class_='col-sm-4 col-lg-4 col-md-4')[6]
+boxes
+
+boxes.find('a').text
+
+boxes.find('p', class_='description').text
+
+box2 = soup.find_all('ul', class_='nav', id='side-menu')[0]
+
+box2.find_all('li')[1].text
+
 
 
 
