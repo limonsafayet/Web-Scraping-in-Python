@@ -73,7 +73,7 @@ soup.find_all('p', class_ = re.compile('pull'))
 soup.find_all('p', class_ = re.compile('pull'), limit = 3)
 
 
-#find_all - part 3
+# find_all - part 3
 product_name = soup.find_all('a', class_ = 'title')
 product_name
 
@@ -92,7 +92,6 @@ for i in product_name:
     name = i.text
     product_name_list.append(name)
 
-
 price_list = []
 for i in price:
     price2 = i.text
@@ -110,8 +109,14 @@ for i in description:
     descriptions2 = i.text
     descriptions_list.append(descriptions2)
 
+import pandas as pd
+
 table = pd.DataFrame({'Product Name':product_name_list, 'Description':descriptions_list,
-                      'Price':price_list, 'Reviews':reviews_list})
+                     'Price':price_list, 'Reviews':reviews_list})
+
+# print(table)
+
+
 
 
 
