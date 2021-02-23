@@ -30,8 +30,8 @@ upper = nested.find_all('span', class_ = 'primary')[1].text
 
 print ("52 week range Upper Price : "+upper)
 
-# Analayst Rating
+# Analyst Rating
 
 avg = soup.find('li', class_ = 'analyst__option active').text
 
-print("Analyst Ratings : "+ avg)
+print("Analyst Ratings :  "+ avg)

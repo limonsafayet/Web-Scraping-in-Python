@@ -3,10 +3,12 @@ Web Scraping in Python with Beautifulsoup and Selenium
 
 ## Description
 
-In this project data are scrap from websites using python with Beautifulsoup and Selenium. 
+In this project, data are scrap from websites using python with Beautifulsoup and Selenium. 
 
 ## In basics.py
 
-Here is basics of Beautifulsoup. How to user Beautifulsoup functions to get data from websites.
+Here are the basics of Beautifulsoup. How to use Beautifulsoup functions to get data from websites.
 
+## In stocks.py
 
+Here from (https://www.marketwatch.com/investing/stock/aapl) this website, 5 types of data are scraped. They are price of stock, closing price, 52 week range lower, 52 week range upper, analyst rating. 
