@@ -17,6 +17,15 @@ for i in table.find_all('th'):
     headers.append(title)
 
 df = pd.DataFrame(columns= headers)
+
+for j in table.find_all('tr')[1:]:
+    row_data = j.find_all('td')
+    row = [tr.text for tr in row_data]
+    length = len(df)
+    df.loc[length] = row
+
 print(df)
+
+df.to_csv('~/Scraped-Data/world_population_scraped_data.csv')
 
 
