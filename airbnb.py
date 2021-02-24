@@ -7,3 +7,10 @@ page = requests.get(url)
 
 soup = BeautifulSoup(page.text, 'lxml')
 
+# Next page url get
+
+next_page = soup.find('a', {'aria-label':'Next'}).get('href')
+next_page_url = 'https://www.airbnb.com'+next_page
+
+print(next_page_url)
+
