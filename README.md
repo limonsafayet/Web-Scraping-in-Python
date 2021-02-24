@@ -23,4 +23,8 @@ Here from (https://www.nfl.com/standings/league/2019/reg/) this website National
 
 ## In airbnb.py
 
-Here ***Multiple Web Page*** data have been scraped from https://www.airbnb.com and stored into Scraped-Data folder in CSV format. 
+Here ***Multiple Web Page*** data have been scraped from https://www.airbnb.com and those data are stored into Scraped-Data folder in CSV format. 
+
+## In carpages.py
+
+Here 1 to 20 number pages data have been scraped from https://www.carpages.ca and those data are stored into Scraped-Data folder in CSV format. 
