@@ -1,6 +1,6 @@
 # Part 1
 
-"""
+
 from selenium import webdriver
 
 driver = webdriver.Chrome('/usr/bin/chromedriver')
@@ -17,7 +17,7 @@ for i in range(30):
     price = driver.find_element_by_xpath('//*[@id="'+str(i)+'"]/div[2]/div/p/span').text
 
     print(price)
-"""
+
 
 # Part 2
 
@@ -32,17 +32,17 @@ driver.get('https://www.google.com/')
 box = driver.find_element_by_xpath('/html/body/div[1]/div[3]/form/div[2]/div[1]/div[1]/div/div[2]/input')
 
 box.send_keys('web scraping')
-#box.send_keys(Keys.ENTER) # Press Enter
+box.send_keys(Keys.ENTER) # Press Enter
 
 # Clicking on a button
 
 button = driver.find_element_by_xpath('/html/body/div[1]/div[3]/form/div[2]/div[1]/div[3]/center/input[1]')
-button.click()   #Press Search Button
+button.click()   # Press Search Button
 
 # Taking a screenshot
 
-#driver.save_screenshot('~/PycharmProjects/Web-Scraping/Scraped-Data/screenshot.png') # saving the screenshot
-"""
+driver.save_screenshot('~/PycharmProjects/Web-Scraping/Scraped-Data/screenshot.png') # Saving the screenshot
+
 # Self-Scrolling
 driver.find_element_by_xpath('/html/body/div[7]/div[2]/div[4]/div/div[1]/div/div[1]/div/div[3]/a').click()
 
@@ -52,8 +52,7 @@ driver.execute_script('window.scrollTo(0, 6000)')
 
 while True:
     driver.execute_script('window.scrollTo(0, document.body.scrollHeight)')
-    
-"""
+
 
 # Wait times
 
