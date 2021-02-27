@@ -7,11 +7,11 @@ driver = webdriver.Chrome('/usr/bin/chromedriver')
 
 driver.get('https://www.goat.com/sneakers')
 
-# xpath
+# Find using xpath
 
 price = driver.find_element_by_xpath('//*[@id="0"]/div[2]/div/p/span').text
 
-# xpath and loop
+# Find using xpath and loop
 
 for i in range(30):
     price = driver.find_element_by_xpath('//*[@id="'+str(i)+'"]/div[2]/div/p/span').text
@@ -37,4 +37,19 @@ box.send_keys('web scraping')
 # Clicking on a button
 
 button = driver.find_element_by_xpath('/html/body/div[1]/div[3]/form/div[2]/div[1]/div[3]/center/input[1]')
-button.click() # Press Search Button
+button.click()   #Press Search Button
+
+# Taking a screenshot
+
+#driver.save_screenshot('~/PycharmProjects/Web-Scraping/Scraped-Data/screenshot.png') # saving the screenshot
+
+# Self-Scrolling
+driver.find_element_by_xpath('/html/body/div[7]/div[2]/div[4]/div/div[1]/div/div[1]/div/div[3]/a').click()
+
+driver.execute_script('return document.body.scrollHeight')
+
+driver.execute_script('window.scrollTo(0, 6000)')
+
+while True:
+    driver.execute_script('window.scrollTo(0, document.body.scrollHeight)')
+
