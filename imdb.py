@@ -17,6 +17,6 @@ time.sleep(10)
 
 driver.execute_script('window.scrollTo(0, 12000)')
 
-driver.save_screenshot('~/PycharmProjects/Web-Scraping/Scraped-Data/imdb_screenshot.png')
+driver.save_screenshot('~/Scraped-Data/imdb_screenshot.png')
 
 driver.close()
