@@ -43,4 +43,4 @@ Here first set google as starting page and type ***"top 100 movies of all time i
 
 ### In nike.py
 
-Here first set google as starting page and type ***"nike"*** in the search box. Then press Enter and click on the link corresponding to Nike. After that create a wait time for the entire page to load. Then click on **Sell** and close the popup. Then started **Infinite Scrolling**.
+Here first set google as starting page and type ***"nike"*** in the search box. Then press Enter and click on the link corresponding to Nike. After that create a wait time for the entire page to load. Then click on **Sale** and close the popup. Then started **Infinite Scrolling**.
