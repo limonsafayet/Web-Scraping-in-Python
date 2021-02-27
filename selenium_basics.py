@@ -41,7 +41,7 @@ button.click()   # Press Search Button
 
 # Taking a screenshot
 
-driver.save_screenshot('~/PycharmProjects/Web-Scraping/Scraped-Data/screenshot.png') # Saving the screenshot
+driver.save_screenshot('~/Scraped-Data/screenshot.png') # Saving the screenshot
 
 # Self-Scrolling
 driver.find_element_by_xpath('/html/body/div[7]/div[2]/div[4]/div/div[1]/div/div[1]/div/div[3]/a').click()
