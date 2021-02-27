@@ -30,3 +30,9 @@ Here ***Multiple Web Page*** data have been scraped from https://www.airbnb.com 
 ### In carpages.py
 
 Here 1 to 20 number pages data have been scraped from https://www.carpages.ca and those data are stored into Scraped-Data folder in CSV format. 
+
+## Web Scraping using Selenium
+
+### In selenium_basics.py
+
+Here are the basics of Selenium. How to scrape data using **XPATH**, Sending Text into an **Input Box**, Clicking on a **Button**, Taking a **Screenshot**, **Self-Scrolling**, Wait Times
