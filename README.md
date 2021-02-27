@@ -35,4 +35,8 @@ Here 1 to 20 number pages data have been scraped from https://www.carpages.ca an
 
 ### In selenium_basics.py
 
-Here are the basics of Selenium. How to scrape data using **XPATH**, Sending Text into an **Input Box**, Clicking on a **Button**, Taking a **Screenshot**, **Self-Scrolling**, Wait Times
+Here are the basics of Selenium. How to scrape data using **XPATH**, Sending Text into an **Input Box**, Clicking on a **Button**, Taking a **Screenshot**, **Self-Scrolling**, Wait Times.
+
+### In imdb.py
+
+Here first set google as starting page and type ***"top 100 movies of all time imdb"*** in the search box. Then press Enter and click on the link corresponding to IMDb. After that create a wait time for the entire page to load. Scroll down to where the 50th movie appears. Then take a screenshot of the page.  
