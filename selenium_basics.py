@@ -1,6 +1,5 @@
 # Part 1
 
-
 from selenium import webdriver
 
 driver = webdriver.Chrome('/usr/bin/chromedriver')
@@ -18,7 +17,7 @@ for i in range(30):
 
     print(price)
 
-
+# ----------------------------------------------------------------------------------------------
 # Part 2
 
 from selenium import webdriver
