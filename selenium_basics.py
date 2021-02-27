@@ -1,3 +1,4 @@
+
 from selenium import webdriver
 
 driver = webdriver.Chrome('/usr/bin/chromedriver')
@@ -14,7 +15,6 @@ for i in range(30):
     price = driver.find_element_by_xpath('//*[@id="'+str(i)+'"]/div[2]/div/p/span').text
 
     print(price)
-
 
 
 
