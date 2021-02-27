@@ -39,4 +39,8 @@ Here are the basics of Selenium. How to scrape data using **XPATH**, Sending Tex
 
 ### In imdb.py
 
-Here first set google as starting page and type ***"top 100 movies of all time imdb"*** in the search box. Then press Enter and click on the link corresponding to IMDb. After that create a wait time for the entire page to load. Scroll down to where the 50th movie appears. Then take a screenshot of the page.  
+Here first set google as starting page and type ***"top 100 movies of all time imdb"*** in the search box. Then press Enter and click on the link corresponding to IMDb. After that create a wait time for the entire page to load. Scroll down to where the 50th movie appears. Then take a screenshot of the page. 
+
+### In nike.py
+
+Here first set google as starting page and type ***"nike"*** in the search box. Then press Enter and click on the link corresponding to Nike. After that create a wait time for the entire page to load. Then click on **Sell** and close the popup. Then started **Infinite Scrolling**.
