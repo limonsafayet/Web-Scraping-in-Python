@@ -33,4 +33,4 @@ for product in products:
     except:
         pass
 
-df.to_csv('~/PycharmProjects/Web-Scraping/Scraped-Data/union-los-angeles_scraped_data.csv')
+df.to_csv('~/Scraped-Data/union-los-angeles_scraped_data.csv')
