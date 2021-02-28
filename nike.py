@@ -18,7 +18,7 @@ time.sleep(10)
 imdb_website = driver.find_element_by_xpath('/html/body/div[1]/div[3]/header/div/div[1]/div[2]/nav/div[2]/ul/li[6]/a').click()
 
 time.sleep(10)
-#imdb_website = driver.find_element_by_xpath('/html/body/div[1]/div[4]/nav/button/i').click()
+imdb_website = driver.find_element_by_xpath('/html/body/div[1]/div[4]/nav/button/i').click()
 
 last_height = driver.execute_script('return document.body.scrollHeight')
 print(last_height)
