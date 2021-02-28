@@ -47,4 +47,4 @@ for product in product_card:
     except:
         pass
 
-df.to_csv('~/PycharmProjects/Web-Scraping/Scraped-Data/nike_scraped_data.csv')
+df.to_csv('~/Scraped-Data/nike_scraped_data.csv')
