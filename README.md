@@ -44,3 +44,7 @@ Here first set google as starting page and type ***"top 100 movies of all time i
 ### In nike.py
 
 Here first set google as starting page and type ***"nike"*** in the search box. Then press Enter and click on the link corresponding to Nike. After that create a wait time for the entire page to load. Then click on **Sell** and close the popup. Then started **Infinite Scrolling**. When it reached the bottom of that page then scraped data using ***Beautifulsoup*** and stored those data into Scraped-Data folder in CSV format.
+
+### In union_los_angeles.py
+
+Here from (https://store.unionlosangeles.com/collections/outerwear) this website data are scraped. First using selenium go to that website,  wait time for the entire page to load. Then started **Infinite Scrolling**. When it reached the bottom of that page then scraped data using ***Beautifulsoup*** and stored those data into Scraped-Data folder in CSV format.
