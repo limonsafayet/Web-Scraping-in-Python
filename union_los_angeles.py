@@ -19,19 +19,18 @@ while True:
 
 soup = BeautifulSoup(driver.page_source, 'lxml')
 
-product_card = soup.find_all('div', class_='container main')
-
-df = pd.DataFrame({'Link':[''], 'Name':[''], 'Subtitle':[''],'Color':[''],'Price':[''],'Sale Price':['']})
-for product in product_card:
+section = soup.find('div', {'id':'main', 'role':'main'})
+products = section.find_all('li')
+df = pd.DataFrame({'Link':[''], 'Vendor':[''], 'Title':[''],'Price':['']})
+for product in products:
     try:
-        link = product.find('a', class_='product-card__img-link-overlay').get('href')
-        name = product.find('div', class_='product-card__title').text
-        subtitle = product.find('div', class_='product-card__subtitle').text
-        color = product.find('div', class_='product-card__product-count').text
-        full_price = product.find('div', class_='product-price css-1h0t5hy').text
-        sale_price = product.find('div', class_='product-price is--current-price css-s56yt7').text
-        df = df.append({'Link':link, 'Name':name, 'Subtitle':subtitle,'Color':color,'Price':full_price,'Sale Price':sale_price}, ignore_index= True)
+        link = product.find('a').get('href')
+        vendor = product.find('p', class_='cap-vendor').text
+        title = product.find('p', class_='cap-title').text
+        price = product.find('p', class_='cap-price').text
+
+        df = df.append({'Link':link, 'Vendor':vendor, 'Title':title,'Price':price}, ignore_index= True)
     except:
         pass
 
-df.to_csv('~/Scraped-Data/nike_scraped_data.csv')
+df.to_csv('~/PycharmProjects/Web-Scraping/Scraped-Data/union-los-angeles_scraped_data.csv')
