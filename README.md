@@ -51,4 +51,8 @@ Here from (https://store.unionlosangeles.com/collections/outerwear) this website
 
 ### In twitter.py
 
-Here celebrity tweets are scraped. First using selenium user name and password entered into input filed and login button pressed. Then in the search box of the home page celebrity name is entered automatically. Then using Beautifulsoup tweets and scaped and store them in a list. 
+Here celebrity tweets are scraped. First using selenium user name and password entered into input filed and login button pressed. Then in the search box of the home page celebrity name is entered automatically. Then using Beautifulsoup tweets and scraped and store them in a list. 
+
+### In indeed.py
+
+Here from (https://www.indeed.com) job post data are scraped. First, enter the job name and location into the input box and click the search button using selenium. Then grabs the HTML of each posting and scraped those data also stores those data into Scraped-Data folder in CSV format.
