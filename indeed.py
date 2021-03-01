@@ -54,6 +54,6 @@ while True:
     except:
         break
 
-df.to_csv('~/PycharmProjects/Web-Scraping/Scraped-Data/indeed_scraped_data.csv')
+df.to_csv('~/Scraped-Data/indeed_scraped_data.csv')
 
 
