@@ -55,4 +55,4 @@ Here celebrity tweets are scraped. First using selenium user name and password e
 
 ### In indeed.py
 
-Here from (https://www.indeed.com) job post data are scraped. First, enter the job name and location into the input box and click the search button using selenium. Then grabs the HTML of each posting and scraped those data also stores those data into Scraped-Data folder in CSV format.
+Here from (https://www.indeed.com) job post data are scraped. First, enter the job name and location into the input box and click the search button using selenium. Then grabs the HTML of each posting and scraped those data. Then sort those data by Date also stores those data into Scraped-Data folder in CSV format.
