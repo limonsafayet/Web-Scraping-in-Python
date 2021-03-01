@@ -66,6 +66,6 @@ df['Date_new'] = df['Date_num'].apply(integer)
 df.sort_values(by= ['Date_new', 'Salary'], inplace= True)
 
 df = df[['Link', 'Job Title', 'Company', 'Location', 'Salary', 'Date']]
-df.to_csv('~/PycharmProjects/Web-Scraping/Scraped-Data/indeed_scraped_data.csv')
+df.to_csv('~/Scraped-Data/indeed_scraped_data.csv')
 
 
