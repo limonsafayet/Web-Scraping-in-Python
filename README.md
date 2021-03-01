@@ -48,3 +48,7 @@ Here first set google as starting page and type ***"nike"*** in the search box. 
 ### In union_los_angeles.py
 
 Here from (https://store.unionlosangeles.com/collections/outerwear) this website data are scraped. First using selenium go to that website,  wait time for the entire page to load. Then started **Infinite Scrolling**. When it reached the bottom of that page then scraped data using ***Beautifulsoup*** and stored those data into Scraped-Data folder in CSV format.
+
+### In twitter.py
+
+Here celebrity tweets are scraped. First using selenium user name and password entered into input filed and login button pressed. Then in the search box of the home page celebrity name is entered automatically. Then using Beautifulsoup tweets and scaped and store them in a list. 
