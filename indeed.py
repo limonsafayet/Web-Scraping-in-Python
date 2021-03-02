@@ -69,3 +69,34 @@ df = df[['Link', 'Job Title', 'Company', 'Location', 'Salary', 'Date']]
 df.to_csv('~/Scraped-Data/indeed_scraped_data.csv')
 
 
+#####################################################################################
+
+#Code below sends an email to whomever through python
+import smtplib, ssl
+from email.mime.text import MIMEText
+from email.mime.base import MIMEBase
+from email.mime.multipart import MIMEMultipart
+from email import encoders
+
+#Input the email account that will send the email and who will receiving it
+sender = 'account@gmail.com'
+receiver = 'account@gmail.com'
+
+#Creates the Message, Subject line, From and To
+msg = MIMEMultipart()
+msg['Subject'] = 'New Jobs on Indeed'
+msg['From'] = sender
+msg['To'] = ','.join(receiver)
+
+#Adds a csv file as an attachment to the email (indeed_jobs.csv is our attahced csv in this case)
+part = MIMEBase('application', 'octet-stream')
+part.set_payload(open('A/File/Path/indeed_jobs.csv', 'rb').read())
+encoders.encode_base64(part)
+part.add_header('Content-Disposition', 'attachment; filename ="indeed_jobs.csv"')
+msg.attach(part)
+
+#Will login to your email and actually send the message above to the receiver
+s = smtplib.SMTP_SSL(host = 'smtp.gmail.com', port = 465)
+s.login(user = 'account@gmail.com', password = 'input your password')
+s.sendmail(sender, receiver, msg.as_string())
+s.quit()
